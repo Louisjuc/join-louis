@@ -1,3 +1,5 @@
+console.log("auth.js START");
+
 import { validateField, validateOnBlur, setError, isValidEmail } from '../utils/form-validation.js';
 import { loginUser, registerUser, loginAsGuest } from '../firebase/auth.js';
 import { showToast } from '../components/toast.js';
@@ -317,3 +319,4 @@ initAuthSwitch();
 initPasswordToggles();
 initLoginForm();
 initSignupForm();
+console.log("auth.js END");
